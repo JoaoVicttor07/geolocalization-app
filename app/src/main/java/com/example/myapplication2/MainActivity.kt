@@ -1,4 +1,3 @@
-// Localizado em app/src/main/java/com/example/myapplication2/MainActivity.kt
 package com.example.myapplication2
 
 import android.Manifest
@@ -29,15 +28,15 @@ class MainActivity : AppCompatActivity() {
         locationTextView = findViewById(R.id.locationTextView)
         lastUpdateTextView = findViewById(R.id.lastUpdateTextView)
 
-        // Instancia o cliente de localização
+
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-        // Configura o pedido de localização
+
         locationRequest = LocationRequest.Builder(Priority.PRIORITY_HIGH_ACCURACY, 10000)
             .setMinUpdateIntervalMillis(10000)
             .build()
 
-        // Configura o callback que será chamado a cada atualização
+
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
                 super.onLocationResult(locationResult)
@@ -51,13 +50,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startLocationUpdates() {
-        // Verifica se a permissão foi concedida
+
         if (ActivityCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            // Se não houver permissão, solicita ao usuário
+
             ActivityCompat.requestPermissions(
                 this,
                 arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
@@ -65,7 +64,7 @@ class MainActivity : AppCompatActivity() {
             )
             return
         }
-        // Inicia as atualizações de localização
+
         fusedLocationClient.requestLocationUpdates(
             locationRequest,
             locationCallback,
@@ -74,10 +73,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUIWithLocation(location: Location) {
-        // Atualiza a localização atual no TextView
+
         locationTextView.text = "Latitude: ${location.latitude}, Longitude: ${location.longitude}"
 
-        // Atualiza o TextView de última atualização com a hora atual formatada
+
         val currentTime = getCurrentTime()
         lastUpdateTextView.text = "Última atualização: $currentTime"
     }
@@ -104,7 +103,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        // Para as atualizações de localização ao destruir a atividade
+
         fusedLocationClient.removeLocationUpdates(locationCallback)
     }
 

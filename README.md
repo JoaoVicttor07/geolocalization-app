@@ -23,7 +23,7 @@ Um aplicativo Android que obtém e exibe a localização do dispositivo em tempo
 
 # Clonar repositório
 <ol>
-  <li>Clone o repositório para o seu ambiente local: git clone https://github.com/seu-usuario/MyApplication2.git
+  <li>Clone o repositório para o seu ambiente local: git clone https://github.com/JoaoVicttor07/geolocalization-app.git
 </li>
   <li>Abra o projeto no Android Studio.</li>
 </ol>

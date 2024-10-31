@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_light">#BB86FC</color> <!-- Roxo claro para elementos primários no modo escuro -->
+    <color name="primary_dark">#3700B3</color> <!-- Roxo escuro para destaque no modo escuro -->
+    <color name="background_light">#121212</color> <!-- Fundo escuro para modo escuro -->
+    <color name="background_dark">#121212</color> <!-- Fundo escuro -->
+    <color name="text_light">#FFFFFF</color> <!-- Texto claro para boa legibilidade -->
+    <color name="text_dark">#FFFFFF</color> <!-- Texto claro para contraste no modo escuro -->
+</resources>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Cores para o modo claro -->
+    <color name="primary_light">#6200EE</color> <!-- Azul forte para botões e elementos primários -->
+    <color name="primary_dark">#3700B3</color> <!-- Azul escuro para destaque -->
+    <color name="background_light">#FFFFFF</color> <!-- Fundo claro -->
+    <color name="background_dark">#FFFFFF</color> <!-- Fundo claro para modo claro, mesmo valor para evitar erros -->
+    <color name="text_light">#000000</color> <!-- Texto escuro para modo claro -->
+    <color name="text_dark">#000000</color> <!-- Texto escuro para modo claro, mesmo valor para evitar erros -->
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application2</string>
+    <string name="app_name">Geolocation App</string>
     <string name="location_waiting">Localização: Aguardando...</string>
     <string name="location_display">Localização: %1$s</string>
     <string name="last_update_display">Última atualização: %1$s</string>
